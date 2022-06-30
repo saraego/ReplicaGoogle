@@ -4,7 +4,13 @@ body {
     font-size: 14px;
     margin: 0;
 }
-
+input[type=checkbox]{
+    display: none;
+}
+.bi{
+    font-size: 20px;
+    cursor: pointer;
+}
 /*Barra de navegação*/
 
 #navbar {
@@ -131,15 +137,18 @@ footer {
     background-color: #F2F2F2;
     border-top: 1px solid #E4E4E4;
 }
-footer > div{
+footer .btn-dark{
     height: 45px;
     padding: 0 30px;
     position: absolute;
-    bottom: 45px;
+    bottom: 46px;
     width: 100%;
-    background-color: #F2F2F2;  
+    background-color: #F2F2F2;
     color: #5F6368;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #left-bar,
 #right-bar {
@@ -152,4 +161,22 @@ footer > div{
 #right-bar {
     position: absolute;
     right: 0;
+}
+
+
+/*Dark Theme*/
+.dark{
+    background-color: #263238;
+}
+
+.dark .nav-list li a{
+    color: #FFF;
+}
+.dark footer{
+    background-color: transparent;
+    border: 0;
+}
+.dark .btn-dark{
+    background-color: transparent;
+    color: #FFF
 }
